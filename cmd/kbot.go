@@ -17,6 +17,10 @@ var (
 	// teleToken bot
 	TeleToken = os.Getenv("TELE_TOKEN")
 )
+var (
+	// owner
+	owner = []string{"https://github.com/ImGhostDev"}
+)
 
 // kbotCmd represents the kbot command
 var kbotCmd = &cobra.Command{
@@ -49,6 +53,9 @@ to quickly create a Cobra application.`,
 			switch payload {
 			case "hello":
 				err = m.Send(fmt.Sprintf("Hello I'm kbot %s", appVersion))
+			case "owner":
+				err = m.Send(fmt.Sprintf("My owner is %s", owner))
+
 			}
 
 			return err
