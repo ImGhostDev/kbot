@@ -8,6 +8,6 @@ link: t.me/NaSA_Allergy_bot
 >> go build -ldflags "-X="github.com/ImGhostDev/kbot/cmd.appVersion=v1.0.2
 ### how to run:
 >>  ./kbot start 
-### version chech:
+### version check:
 >>  ./kbot version 
 
